@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FBI Digital Agency - وكالة رقمية متكاملة متخصصة في تصميم المواقع، التسويق الرقمي، الذكاء الاصطناعي والأتمتة. نحوّل أفكارك إلى مشاريع رقمية ناجحة.">
+<meta name="keywords" content="وكالة رقمية, تصميم مواقع, تسويق رقمي, SEO, إعلانات, ذكاء اصطناعي, الجزائر">
+<meta property="og:title" content="FBI Digital Agency - نحوّل أفكارك إلى مشاريع رقمية ناجحة">
+<meta property="og:description" content="وكالة رقمية متكاملة تقدم خدمات التصميم، التطوير، التسويق الرقمي والذكاء الاصطناعي">
+<meta property="og:type" content="website">
+<title>FBI Digital Agency | Future Building Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--navy:#0A1628;
+--navy-light:#112240;
+--navy-mid:#1a3357;
+--gold:#C9A84C;
+--gold-light:#E8C96E;
+--teal:#00BFA5;
+--teal-dark:#009688;
+--white:#FFFFFF;
+--gray-100:#F8F9FC;
+--gray-200:#EDF0F7;
+--gray-400:#8896AB;
+--gray-600:#4A5568;
+--text-primary:#FFFFFF;
+--text-secondary:#94A3B8;
+--section-pad:5rem 0;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--navy);color:var(--text-primary);overflow-x:hidden;direction:rtl}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;transition:all .3s ease}
+nav.scrolled{background:rgba(10,22,40,.95);backdrop-filter:blur(12px);box-shadow:0 2px 30px rgba(0,0,0,.3)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:.75rem}
+.logo-mark{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-light));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1rem;color:var(--navy);letter-spacing:-.5px}
+.logo-text{line-height:1.2}
+.logo-text span:first-child{display:block;font-size:1rem;font-weight:700;color:var(--white)}
+.logo-text span:last-child{display:block;font-size:.7rem;color:var(--gold);letter-spacing:.05em}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.9rem;color:var(--text-secondary);transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:var(--gold);transition:width .3s}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy)!important;padding:.55rem 1.5rem;border-radius:8px;font-weight:700;transition:transform .2s,box-shadow .2s!important}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.35)!important}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:all .3s}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:5rem}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 50%,#0d2140 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,191,165,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,191,165,.05) 1px,transparent 1px);background-size:60px 60px}
+.hero-glow{position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,.08) 0%,transparent 70%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:-20%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(0,191,165,.06) 0%,transparent 70%);pointer-events:none}
+.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);color:var(--gold);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;margin-bottom:1.5rem}
+.hero-badge::before{content:'●';font-size:.5rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:3.2rem;font-weight:900;line-height:1.25;margin-bottom:1.5rem}
+.hero h1 .highlight{background:linear-gradient(90deg,var(--gold),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-desc{font-size:1.1rem;color:var(--text-secondary);line-height:1.9;margin-bottom:2.5rem;max-width:520px}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy);padding:.8rem 2rem;border-radius:10px;font-weight:700;font-size:.95rem;transition:all .3s;border:none;cursor:pointer}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(201,168,76,.4)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);padding:.8rem 2rem;border-radius:10px;font-weight:600;font-size:.95rem;border:1.5px solid rgba(255,255,255,.2);transition:all .3s}
+.btn-secondary:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-3px)}
+.hero-visual{display:flex;justify-content:center;align-items:center;position:relative}
+.hero-card{background:rgba(17,34,64,.8);border:1px solid rgba(201,168,76,.2);border-radius:20px;padding:2rem;backdrop-filter:blur(12px);width:100%;max-width:380px;position:relative}
+.hero-card::before{content:'';position:absolute;top:-1px;right:2rem;left:2rem;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hc-title{font-size:.8rem;color:var(--gold);margin-bottom:1.5rem;letter-spacing:.05em}
+.hc-stat{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.hc-stat:last-child{border-bottom:none}
+.hc-stat-label{font-size:.85rem;color:var(--text-secondary)}
+.hc-stat-val{font-size:1.1rem;font-weight:700;color:var(--white)}
+.hc-stat-trend{font-size:.75rem;color:#22c55e;background:rgba(34,197,94,.1);padding:.2rem .6rem;border-radius:50px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.hs-item{text-align:center;padding:1rem;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+.hs-num{font-size:1.8rem;font-weight:900;background:linear-gradient(90deg,var(--gold),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hs-label{font-size:.75rem;color:var(--text-secondary);margin-top:.25rem}
+
+/* SECTIONS */
+.section{padding:var(--section-pad)}
+.section-alt{background:var(--navy-light)}
+.section-tag{display:inline-block;background:rgba(0,191,165,.1);color:var(--teal);border:1px solid rgba(0,191,165,.2);padding:.35rem 1rem;border-radius:50px;font-size:.8rem;margin-bottom:1rem}
+.section-title{font-size:2.4rem;font-weight:900;margin-bottom:1rem}
+.section-title .accent{color:var(--gold)}
+.section-sub{color:var(--text-secondary);font-size:1rem;max-width:600px;line-height:1.8}
+.section-header{text-align:center;margin-bottom:3.5rem}
+.section-header .section-sub{margin:0 auto}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.service-card{background:var(--navy-light);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--teal));transform:scaleX(0);transform-origin:right;transition:transform .3s}
+.service-card:hover{border-color:rgba(201,168,76,.25);transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.service-card:hover::before{transform:scaleX(1)}
+.sc-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.5rem}
+.sc-icon.gold{background:rgba(201,168,76,.12);color:var(--gold)}
+.sc-icon.teal{background:rgba(0,191,165,.12);color:var(--teal)}
+.sc-icon.blue{background:rgba(59,130,246,.12);color:#60a5fa}
+.sc-icon.purple{background:rgba(139,92,246,.12);color:#a78bfa}
+.sc-title{font-size:1.05rem;font-weight:700;margin-bottom:.6rem}
+.sc-desc{font-size:.85rem;color:var(--text-secondary);line-height:1.7}
+
+/* WHY US */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem}
+.why-card{text-align:center;padding:2rem 1.5rem}
+.why-icon{width:70px;height:70px;border-radius:50%;margin:0 auto 1.25rem;display:flex;align-items:center;justify-content:center;font-size:1.8rem}
+.why-icon.g{background:linear-gradient(135deg,rgba(201,168,76,.2),rgba(232,201,110,.1));color:var(--gold)}
+.why-icon.t{background:linear-gradient(135deg,rgba(0,191,165,.2),rgba(0,150,136,.1));color:var(--teal)}
+.why-num{font-size:2.5rem;font-weight:900;background:linear-gradient(90deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
+.why-title{font-size:1.1rem;font-weight:700;margin-bottom:.5rem}
+.why-desc{font-size:.85rem;color:var(--text-secondary);line-height:1.7}
+
+/* SECTORS */
+.sectors-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+.sector-card{background:var(--navy-light);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.5rem 1rem;text-align:center;transition:all .3s;cursor:default}
+.sector-card:hover{border-color:var(--gold);background:rgba(201,168,76,.06);transform:translateY(-4px)}
+.sector-icon{font-size:2rem;margin-bottom:.75rem}
+.sector-name{font-size:.9rem;font-weight:600;color:var(--text-secondary)}
+.sector-card:hover .sector-name{color:var(--gold)}
+
+/* PROCESS */
+.process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;position:relative}
+.process-steps::before{content:'';position:absolute;top:40px;right:10%;left:10%;height:1px;background:linear-gradient(90deg,var(--gold),var(--teal),var(--gold));opacity:.3}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:80px;height:80px;border-radius:50%;background:var(--navy-light);border:2px solid rgba(201,168,76,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.5rem;font-weight:900;color:var(--gold);position:relative;transition:all .3s}
+.step:hover .step-num{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:scale(1.1)}
+.step-title{font-size:.9rem;font-weight:700;margin-bottom:.4rem}
+.step-desc{font-size:.78rem;color:var(--text-secondary);line-height:1.6}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat-card{text-align:center;padding:2rem 1rem;background:var(--navy-light);border-radius:16px;border:1px solid rgba(255,255,255,.07)}
+.stat-num{font-size:3rem;font-weight:900;background:linear-gradient(90deg,var(--gold),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-label{font-size:.9rem;color:var(--text-secondary);margin-top:.5rem}
+
+/* TESTIMONIALS */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.testimonial-card{background:var(--navy-light);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2rem;position:relative}
+.testimonial-card::before{content:'❝';position:absolute;top:1rem;left:1.5rem;font-size:3rem;color:var(--gold);opacity:.15;font-family:serif;line-height:1}
+.tc-text{font-size:.9rem;color:var(--text-secondary);line-height:1.8;margin-bottom:1.5rem;font-style:italic}
+.tc-author{display:flex;align-items:center;gap:.75rem}
+.tc-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--teal));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:var(--navy)}
+.tc-name{font-weight:700;font-size:.9rem}
+.tc-role{font-size:.78rem;color:var(--text-secondary)}
+.tc-stars{color:var(--gold);font-size:.85rem;margin-top:.25rem}
+
+/* PACKAGES */
+.packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.pkg-card{background:var(--navy-light);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:2.5rem 2rem;position:relative;transition:all .3s}
+.pkg-card.featured{border-color:var(--gold);background:rgba(201,168,76,.05)}
+.pkg-badge{position:absolute;top:-1rem;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--gold),var(--gold-light));color:var(--navy);padding:.35rem 1.5rem;border-radius:50px;font-size:.8rem;font-weight:700;white-space:nowrap}
+.pkg-name{font-size:.85rem;color:var(--gold);font-weight:600;letter-spacing:.08em;margin-bottom:.75rem}
+.pkg-price{font-size:2.5rem;font-weight:900;margin-bottom:.25rem}
+.pkg-period{font-size:.85rem;color:var(--text-secondary)}
+.pkg-divider{height:1px;background:rgba(255,255,255,.07);margin:1.5rem 0}
+.pkg-features{list-style:none;margin-bottom:2rem}
+.pkg-features li{display:flex;align-items:center;gap:.65rem;font-size:.88rem;color:var(--text-secondary);margin-bottom:.75rem}
+.pkg-features li::before{content:'✓';color:var(--teal);font-weight:700;font-size:.9rem;flex-shrink:0}
+
+/* PRICING PAGE TABS */
+.services-tabs{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
+.tab-btn{padding:.6rem 1.5rem;border-radius:50px;border:1px solid rgba(255,255,255,.1);background:transparent;color:var(--text-secondary);font-family:'Cairo',sans-serif;font-size:.88rem;cursor:pointer;transition:all .2s}
+.tab-btn.active,.tab-btn:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);font-weight:700}
+
+/* AI PAGE */
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.ai-card{background:var(--navy-light);border:1px solid rgba(0,191,165,.15);border-radius:16px;padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.ai-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,191,165,.03),transparent);pointer-events:none}
+.ai-card:hover{border-color:var(--teal);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,191,165,.1)}
+.ai-icon{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,rgba(0,191,165,.2),rgba(0,150,136,.1));display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.25rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.ci-item{display:flex;align-items:flex-start;gap:1rem}
+.ci-icon{width:48px;height:48px;border-radius:12px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.ci-text{font-size:.85rem;color:var(--text-secondary);margin-top:.25rem}
+.contact-form{background:var(--navy-light);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:2.5rem}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:.85rem;color:var(--text-secondary);margin-bottom:.5rem}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.8rem 1rem;color:var(--white);font-family:'Cairo',sans-serif;font-size:.9rem;transition:border-color .2s;outline:none}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-group select option{background:var(--navy-light);color:var(--white)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.social-links{display:flex;gap:1rem;flex-wrap:wrap}
+.social-link{width:44px;height:44px;border-radius:10px;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:all .2s}
+.social-link:hover{border-color:var(--gold);background:rgba(201,168,76,.1);color:var(--gold)}
+
+/* CTA SECTION */
+.cta-section{background:linear-gradient(135deg,var(--navy-mid),var(--navy-light));border:1px solid rgba(201,168,76,.15);border-radius:24px;padding:4rem 3rem;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(201,168,76,.06),transparent 70%);pointer-events:none}
+.cta-title{font-size:2.5rem;font-weight:900;margin-bottom:1rem}
+.cta-desc{color:var(--text-secondary);font-size:1rem;max-width:500px;margin:0 auto 2rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* TRAINING */
+.training-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.training-card{background:var(--navy-light);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2rem;transition:all .3s}
+.training-card:hover{border-color:rgba(0,191,165,.3);transform:translateY(-4px)}
+.tc-level{font-size:.75rem;padding:.3rem .8rem;border-radius:50px;display:inline-block;margin-bottom:1rem;font-weight:600}
+.tc-level.beg{background:rgba(34,197,94,.1);color:#22c55e}
+.tc-level.mid{background:rgba(201,168,76,.1);color:var(--gold)}
+.tc-level.adv{background:rgba(139,92,246,.1);color:#a78bfa}
+.tc-dur{font-size:.8rem;color:var(--text-secondary);margin-top:.5rem}
+.tc-dur::before{content:'⏱ '}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding:4rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:.85rem;color:var(--text-secondary);line-height:1.8;margin:1rem 0}
+.footer-col h4{font-size:.9rem;font-weight:700;margin-bottom:1rem;color:var(--white)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.footer-links a{font-size:.85rem;color:var(--text-secondary);transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:var(--text-secondary)}
+
+/* PAGE VISIBILITY */
+.page{display:none}
+.page.active{display:block}
+
+/* PAGE HERO SMALL */
+.page-hero{padding:8rem 0 4rem;text-align:center;position:relative}
+.page-hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,var(--navy-light) 0%,var(--navy) 100%)}
+.page-hero-content{position:relative;z-index:1}
+
+/* WHATSAPP FLOAT */
+.whatsapp-btn{position:fixed;bottom:2rem;left:2rem;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:999;transition:transform .2s;cursor:pointer}
+.whatsapp-btn:hover{transform:scale(1.1)}
+
+/* MOBILE */
+@media(max-width:900px){
+.hero-content{grid-template-columns:1fr;gap:2rem}
+.hero h1{font-size:2.2rem}
+.hero-visual{order:-1}
+.hero-card{max-width:100%}
+.stats-grid{grid-template-columns:repeat(2,1fr)}
+.process-steps{grid-template-columns:repeat(2,1fr)}
+.process-steps::before{display:none}
+.packages-grid{grid-template-columns:1fr}
+.contact-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+.footer-brand{grid-column:1/-1}
+.nav-links{display:none}
+.hamburger{display:flex}
+.footer-bottom{flex-direction:column;gap:.75rem;text-align:center}
+}
+@media(max-width:600px){
+.section-title{font-size:1.8rem}
+.stats-grid{grid-template-columns:1fr 1fr}
+.hero-stats{grid-template-columns:repeat(3,1fr)}
+.form-row{grid-template-columns:1fr}
+.packages-grid{grid-template-columns:1fr}
+}
+
+/* Animations */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+<div class="container">
+<div class="nav-inner">
+<div class="logo">
+<div class="logo-mark">FBI</div>
+<div class="logo-text">
+<span>Future Building Institute</span>
+<span>وكالة رقمية متكاملة</span>
+</div>
+</div>
+<ul class="nav-links">
+<li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+<li><a href="#" onclick="showPage('services')">الخدمات</a></li>
+<li><a href="#" onclick="showPage('packages')">الباقات</a></li>
+<li><a href="#" onclick="showPage('ai')">الذكاء الاصطناعي</a></li>
+<li><a href="#" onclick="showPage('training')">التكوين</a></li>
+<li><a href="#" onclick="showPage('contact')" class="nav-cta">تواصل معنا</a></li>
+</ul>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" style="display:none;position:fixed;inset:0;background:rgba(10,22,40,.98);z-index:999;padding:6rem 2rem 2rem;backdrop-filter:blur(12px)">
+<div style="display:flex;flex-direction:column;gap:1.5rem;align-items:center">
+<a href="#" onclick="showPage('home');toggleMenu()" style="font-size:1.2rem;font-weight:600">الرئيسية</a>
+<a href="#" onclick="showPage('services');toggleMenu()" style="font-size:1.2rem;font-weight:600">الخدمات</a>
+<a href="#" onclick="showPage('packages');toggleMenu()" style="font-size:1.2rem;font-weight:600">الباقات</a>
+<a href="#" onclick="showPage('ai');toggleMenu()" style="font-size:1.2rem;font-weight:600">الذكاء الاصطناعي</a>
+<a href="#" onclick="showPage('training');toggleMenu()" style="font-size:1.2rem;font-weight:600">التكوين</a>
+<a href="#" onclick="showPage('contact');toggleMenu()" class="btn-primary" style="margin-top:1rem">تواصل معنا</a>
+</div>
+<div onclick="toggleMenu()" style="position:absolute;top:1.5rem;left:1.5rem;font-size:1.5rem;cursor:pointer;color:var(--text-secondary)">✕</div>
+</div>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page active">
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-grid"></div>
+<div class="hero-glow"></div>
+<div class="hero-glow2"></div>
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<div class="hero-badge">🏆 وكالة رقمية #1 في المنطقة</div>
+<h1>نحوّل <span class="highlight">أفكارك</span> إلى مشاريع رقمية ناجحة</h1>
+<p class="hero-desc">نقدم حلولاً رقمية متكاملة تجمع بين الإبداع والتقنية المتقدمة، لمساعدة مشروعك على النمو وتحقيق أهدافه في العالم الرقمي.</p>
+<div class="hero-ctas">
+<button class="btn-primary" onclick="showPage('contact')">📋 اطلب عرض سعر</button>
+<button class="btn-secondary" onclick="openWhatsApp()">📞 استشارة مجانية</button>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-card">
+<div class="hc-title">📊 لوحة أداء المشاريع</div>
+<div class="hc-stat"><span class="hc-stat-label">مشاريع مُنجزة</span><span style="display:flex;align-items:center;gap:.5rem"><span class="hc-stat-val">250+</span><span class="hc-stat-trend">+18%</span></span></div>
+<div class="hc-stat"><span class="hc-stat-label">معدل رضا العملاء</span><span style="display:flex;align-items:center;gap:.5rem"><span class="hc-stat-val">98%</span><span class="hc-stat-trend">↑</span></span></div>
+<div class="hc-stat"><span class="hc-stat-label">زيادة المبيعات</span><span style="display:flex;align-items:center;gap:.5rem"><span class="hc-stat-val">+340%</span><span class="hc-stat-trend">✓</span></span></div>
+<div class="hc-stat"><span class="hc-stat-label">حملات إعلانية ناجحة</span><span style="display:flex;align-items:center;gap:.5rem"><span class="hc-stat-val">500+</span><span class="hc-stat-trend">+25%</span></span></div>
+<div class="hero-stats">
+<div class="hs-item"><div class="hs-num">7+</div><div class="hs-label">سنوات خبرة</div></div>
+<div class="hs-item"><div class="hs-num">150+</div><div class="hs-label">عميل نشط</div></div>
+<div class="hs-item"><div class="hs-num">14</div><div class="hs-label">خدمة متخصصة</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="section" id="services-preview">
+<div class="container">
+<div class="section-header">
+<div class="section-tag">خدماتنا</div>
+<h2 class="section-title">حلول رقمية <span class="accent">متكاملة</span></h2>
+<p class="section-sub">نقدم طيفاً شاملاً من الخدمات الرقمية لمساعدتك في بناء حضور قوي ومؤثر على الإنترنت</p>
+</div>
+<div class="services-grid">
+<div class="service-card fade-in">
+<div class="sc-icon gold">🌐</div>
+<div class="sc-title">تصميم وتطوير المواقع</div>
+<div class="sc-desc">مواقع احترافية سريعة ومتجاوبة مع جميع الأجهزة، مصممة لتحويل الزوار إلى عملاء</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">🛒</div>
+<div class="sc-title">المتاجر الإلكترونية</div>
+<div class="sc-desc">منصات تجارة إلكترونية متكاملة مع نظام دفع آمن وإدارة مخزون ذكية</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon blue">📱</div>
+<div class="sc-title">إدارة الشبكات الاجتماعية</div>
+<div class="sc-desc">استراتيجيات محتوى متخصصة لبناء مجتمع نشط وتعزيز الوعي بعلامتك التجارية</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon gold">📣</div>
+<div class="sc-title">الإعلانات الرقمية</div>
+<div class="sc-desc">حملات Facebook وInstagram وGoogle Ads موجهة بدقة لتحقيق أقصى عائد على الاستثمار</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">🔍</div>
+<div class="sc-title">SEO وتحسين محركات البحث</div>
+<div class="sc-desc">استراتيجيات متقدمة للوصول إلى صدارة نتائج البحث وجذب حركة مرور عضوية مستدامة</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon purple">🤖</div>
+<div class="sc-title">الذكاء الاصطناعي والأتمتة</div>
+<div class="sc-desc">حلول AI متقدمة لأتمتة عمليات عملك وتعزيز كفاءة الفريق وتجربة العملاء</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon gold">🎨</div>
+<div class="sc-title">الهوية البصرية</div>
+<div class="sc-desc">تصميم شعارات وهويات بصرية متكاملة تعبّر عن قيم علامتك التجارية وتميّزها</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">🎬</div>
+<div class="sc-title">إنتاج الفيديو</div>
+<div class="sc-desc">محتوى فيديو احترافي للتسويق والإعلانات، من الفكرة إلى النشر النهائي</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:2.5rem">
+<button class="btn-primary" onclick="showPage('services')">عرض جميع الخدمات ←</button>
+</div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="section-tag">لماذا نحن؟</div>
+<h2 class="section-title">شركاء <span class="accent">نجاحك</span> الرقمي</h2>
+<p class="section-sub">ليس مجرد وكالة رقمية، بل شريك استراتيجي يفهم أهدافك ويعمل على تحقيقها</p>
+</div>
+<div class="why-grid">
+<div class="why-card fade-in">
+<div class="why-icon g">🧠</div>
+<div class="why-num">7+</div>
+<div class="why-title">سنوات من الخبرة</div>
+<div class="why-desc">خبرة متراكمة في مختلف القطاعات تمنحنا رؤية شاملة لحاجات السوق والعملاء</div>
+</div>
+<div class="why-card fade-in">
+<div class="why-icon t">⚡</div>
+<div class="why-num">360°</div>
+<div class="why-title">حلول رقمية متكاملة</div>
+<div class="why-desc">من التصميم إلى التسويق والتقنية، كل ما تحتاجه تحت سقف واحد بدون تشتت</div>
+</div>
+<div class="why-card fade-in">
+<div class="why-icon g">🎯</div>
+<div class="why-num">98%</div>
+<div class="why-title">نتائج قابلة للقياس</div>
+<div class="why-desc">نعمل بمنهجية البيانات والتحليلات لضمان نتائج حقيقية وقابلة للقياس والتتبع</div>
+</div>
+<div class="why-card fade-in">
+<div class="why-icon t">🛡️</div>
+<div class="why-num">24/7</div>
+<div class="why-title">دعم مستمر</div>
+<div class="why-desc">فريق دعم متاح على مدار الساعة لضمان استمرارية أعمالك الرقمية دون انقطاع</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTORS -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<div class="section-tag">القطاعات</div>
+<h2 class="section-title">نخدم <span class="accent">كل القطاعات</span></h2>
+<p class="section-sub">خبرة واسعة تمتد عبر مختلف القطاعات الاقتصادية لضمان حلول ملائمة لكل صناعة</p>
+</div>
+<div class="sectors-grid">
+<div class="sector-card fade-in"><div class="sector-icon">🏥</div><div class="sector-name">العيادات الطبية</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">🦷</div><div class="sector-name">أطباء الأسنان</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">🏫</div><div class="sector-name">المدارس الخاصة</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">📚</div><div class="sector-name">مراكز التكوين</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">🏢</div><div class="sector-name">الوكالات العقارية</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">🏨</div><div class="sector-name">الفنادق</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">⚖️</div><div class="sector-name">المحامون</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">🔨</div><div class="sector-name">المقاولات</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">🏭</div><div class="sector-name">المؤسسات الصناعية</div></div>
+<div class="sector-card fade-in"><div class="sector-icon">✈️</div><div class="sector-name">وكالات السفر</div></div>
+</div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="section-tag">كيف نعمل</div>
+<h2 class="section-title">مراحل <span class="accent">تنفيذ مشروعك</span></h2>
+<p class="section-sub">منهجية عمل احترافية مُجرَّبة تضمن تسليم مشروعك في الوقت المحدد وبأعلى جودة ممكنة</p>
+</div>
+<div class="process-steps">
+<div class="step fade-in">
+<div class="step-num">1</div>
+<div class="step-title">دراسة المشروع</div>
+<div class="step-desc">تحليل معمق لاحتياجاتك وأهدافك وسوقك المستهدف</div>
+</div>
+<div class="step fade-in">
+<div class="step-num">2</div>
+<div class="step-title">التخطيط الاستراتيجي</div>
+<div class="step-desc">وضع خارطة طريق واضحة وجدول زمني دقيق للتنفيذ</div>
+</div>
+<div class="step fade-in">
+<div class="step-num">3</div>
+<div class="step-title">التصميم والتنفيذ</div>
+<div class="step-desc">فريق متخصص يعمل على إنجاز مشروعك بأعلى معايير الجودة</div>
+</div>
+<div class="step fade-in">
+<div class="step-num">4</div>
+<div class="step-title">الإطلاق والنشر</div>
+<div class="step-desc">اختبار شامل وإطلاق ناجح مع ضمان الأداء المثالي</div>
+</div>
+<div class="step fade-in">
+<div class="step-num">5</div>
+<div class="step-title">المتابعة والتطوير</div>
+<div class="step-desc">دعم مستمر وتحسينات دورية لضمان النمو المستدام</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="section" style="background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%)">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-card fade-in">
+<div class="stat-num">250+</div>
+<div class="stat-label">مشروع رقمي مُنجز</div>
+</div>
+<div class="stat-card fade-in">
+<div class="stat-num">150+</div>
+<div class="stat-label">عميل راضٍ</div>
+</div>
+<div class="stat-card fade-in">
+<div class="stat-num">98%</div>
+<div class="stat-label">نسبة رضا العملاء</div>
+</div>
+<div class="stat-card fade-in">
+<div class="stat-num">500+</div>
+<div class="stat-label">حملة إعلانية ناجحة</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="section-tag">آراء العملاء</div>
+<h2 class="section-title">ماذا يقول <span class="accent">عملاؤنا</span></h2>
+<p class="section-sub">نجاحنا يُقاس بنجاح عملائنا. إليك ما يقولونه عن تجربتهم معنا</p>
+</div>
+<div class="testimonials-grid">
+<div class="testimonial-card fade-in">
+<p class="tc-text">فريق FBI وكالة استثنائية! صمموا لنا موقعاً احترافياً وأداروا حملاتنا الإعلانية بذكاء. تضاعفت حجوزاتنا خلال أشهر قليلة.</p>
+<div class="tc-author">
+<div class="tc-avatar">أح</div>
+<div><div class="tc-name">د. أحمد حميدي</div><div class="tc-role">طبيب أسنان، عيادة الابتسامة</div><div class="tc-stars">★★★★★</div></div>
+</div>
+</div>
+<div class="testimonial-card fade-in">
+<p class="tc-text">بعد سنوات من المحاولات، وجدنا أخيراً وكالة تفهم السوق الجزائري. حقق موقعنا الإلكتروني مبيعات تجاوزت توقعاتنا.</p>
+<div class="tc-author">
+<div class="tc-avatar">سب</div>
+<div><div class="tc-name">سارة بوعلام</div><div class="tc-role">مؤسسة، متجر Élégance</div><div class="tc-stars">★★★★★</div></div>
+</div>
+</div>
+<div class="testimonial-card fade-in">
+<p class="tc-text">خدمة SEO ممتازة! أصبح موقعنا في المرتبة الأولى على Google في أقل من 4 أشهر. نتائج حقيقية وقابلة للقياس.</p>
+<div class="tc-author">
+<div class="tc-avatar">كم</div>
+<div><div class="tc-name">كمال مزيان</div><div class="tc-role">مدير، وكالة عقارية النخبة</div><div class="tc-stars">★★★★★</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+<div class="container">
+<div class="cta-section fade-in">
+<div class="section-tag" style="display:inline-block;margin-bottom:1rem">🚀 ابدأ الآن</div>
+<h2 class="cta-title">ابدأ مشروعك الرقمي <span class="accent">اليوم</span></h2>
+<p class="cta-desc">لا تنتظر أكثر. كل يوم تأخير يعني فرص ضائعة. تواصل معنا الآن للحصول على استشارة مجانية.</p>
+<div class="cta-btns">
+<button class="btn-primary" onclick="showPage('contact')">📋 اطلب عرض سعر مجاني</button>
+<button class="btn-secondary" onclick="openWhatsApp()">💬 تحدث مع خبير</button>
+</div>
+</div>
+</div>
+</section>
+
+</div><!-- end home page -->
+
+<!-- ===== SERVICES PAGE ===== -->
+<div id="page-services" class="page">
+<div class="page-hero">
+<div class="page-hero-bg"></div>
+<div class="page-hero-content">
+<div class="container">
+<div class="section-tag">خدماتنا</div>
+<h1 class="section-title" style="font-size:3rem;margin-top:.5rem">خدماتنا <span class="accent">الرقمية</span></h1>
+<p class="section-sub" style="margin:0 auto">حلول شاملة ومتكاملة لتحقيق أهدافك الرقمية بكفاءة واحترافية</p>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="services-grid">
+<div class="service-card fade-in">
+<div class="sc-icon gold">🌐</div>
+<div class="sc-title">تصميم وتطوير المواقع</div>
+<div class="sc-desc">مواقع إلكترونية احترافية، سريعة، ومتجاوبة مع جميع الأجهزة. نستخدم أحدث التقنيات لضمان تجربة مستخدم استثنائية وأداء عالٍ على محركات البحث.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">🛒</div>
+<div class="sc-title">المتاجر الإلكترونية</div>
+<div class="sc-desc">منصات تجارة إلكترونية متكاملة مع نظام دفع آمن، إدارة مخزون، وتجربة شراء سلسة تزيد من معدلات التحويل وتعظم المبيعات.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon blue">🎯</div>
+<div class="sc-title">صفحات الهبوط Landing Pages</div>
+<div class="sc-desc">صفحات هبوط مُحسّنة للتحويل، مصممة بعناية لتوليد العملاء المحتملين وزيادة مبيعاتك بكفاءة قصوى.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon blue">📱</div>
+<div class="sc-title">إدارة الشبكات الاجتماعية</div>
+<div class="sc-desc">إدارة احترافية لحضورك على جميع المنصات: Facebook، Instagram، TikTok، LinkedIn. محتوى إبداعي وتفاعل منتظم يبني مجتمعاً مخلصاً.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon gold">📣</div>
+<div class="sc-title">Facebook & Instagram Ads</div>
+<div class="sc-desc">حملات إعلانية مدروسة مستهدفة بدقة لجمهورك المثالي. نضمن أقصى عائد على الاستثمار مع تقارير شفافة وتحليل مستمر للأداء.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">🔎</div>
+<div class="sc-title">Google Ads</div>
+<div class="sc-desc">إعلانات Google المتقدمة للوصول إلى العملاء في اللحظة التي يبحثون فيها عن منتجاتك وخدماتك. استهداف دقيق ورسائل مقنعة.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon purple">🔍</div>
+<div class="sc-title">SEO تحسين محركات البحث</div>
+<div class="sc-desc">استراتيجية SEO شاملة تشمل البحث عن الكلمات المفتاحية، تحسين المحتوى، بناء الروابط، وتحسين السرعة للوصول إلى الصدارة والبقاء فيها.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon gold">🎨</div>
+<div class="sc-title">الهوية البصرية</div>
+<div class="sc-desc">تصميم هوية بصرية متكاملة: شعار، ألوان، خطوط، دليل العلامة التجارية. نمنح مشروعك شخصية مميزة تبقى في الأذهان.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">✏️</div>
+<div class="sc-title">التصميم الجرافيكي</div>
+<div class="sc-desc">تصاميم إبداعية للمنشورات، البنرات، الإعلانات المطبوعة والرقمية. محتوى بصري يجذب الانتباه ويحكي قصة علامتك التجارية.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon blue">🎬</div>
+<div class="sc-title">إنتاج الفيديو</div>
+<div class="sc-desc">فيديوهات تسويقية احترافية، إعلانات، شروحات، وريلز مؤثرة. من السيناريو إلى المونتاج النهائي بأعلى معايير الجودة.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon purple">🤖</div>
+<div class="sc-title">الذكاء الاصطناعي والأتمتة</div>
+<div class="sc-desc">حلول AI متكاملة: Chatbots، أتمتة التسويق، CRM ذكي، وإنشاء محتوى بالذكاء الاصطناعي لتوفير وقتك وتضخيم إنتاجيتك.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon gold">📧</div>
+<div class="sc-title">التسويق بالبريد الإلكتروني</div>
+<div class="sc-desc">حملات email marketing مخصصة وآلية لزيادة ولاء العملاء، تعزيز المبيعات، وبناء علاقات دائمة مع جمهورك.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon teal">💼</div>
+<div class="sc-title">CRM وإدارة العملاء</div>
+<div class="sc-desc">أنظمة CRM متقدمة لإدارة علاقاتك مع العملاء، تتبع المبيعات، وأتمتة المتابعة لزيادة الإيرادات وتحسين رضا العملاء.</div>
+</div>
+<div class="service-card fade-in">
+<div class="sc-icon blue">🎓</div>
+<div class="sc-title">التكوين والاستشارات</div>
+<div class="sc-desc">برامج تدريبية متخصصة في التسويق الرقمي، SEO، WordPress، Canva، والذكاء الاصطناعي لتطوير مهاراتك وفريقك.</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:3rem">
+<div class="cta-section" style="background:linear-gradient(135deg,var(--navy-mid),var(--navy-light))">
+<h3 style="font-size:1.8rem;margin-bottom:.75rem">هل أنت مستعد للنمو؟</h3>
+<p style="color:var(--text-secondary);margin-bottom:1.5rem">احصل على استشارة مجانية مع خبرائنا واكتشف أي الخدمات تناسب مشروعك</p>
+<div class="cta-btns">
+<button class="btn-primary" onclick="showPage('contact')">احصل على استشارة مجانية</button>
+<button class="btn-secondary" onclick="showPage('packages')">عرض الباقات والأسعار</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ===== AI PAGE ===== -->
+<div id="page-ai" class="page">
+<div class="page-hero">
+<div class="page-hero-bg"></div>
+<div class="page-hero-content">
+<div class="container">
+<div class="section-tag">الذكاء الاصطناعي</div>
+<h1 class="section-title" style="font-size:3rem;margin-top:.5rem">مستقبل <span class="accent">الأعمال الذكية</span></h1>
+<p class="section-sub" style="margin:0 auto">حلول الذكاء الاصطناعي التي تحوّل طريقة عمل مشروعك وتضاعف إنتاجيتك</p>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="ai-grid">
+<div class="ai-card fade-in">
+<div class="ai-icon">🤖</div>
+<h3 style="font-size:1.1rem;margin-bottom:.75rem">Chatbots الذكية</h3>
+<p style="font-size:.85rem;color:var(--text-secondary);line-height:1.8">مساعدات ذكية تعمل 24/7 للرد على استفسارات عملائك، إتمام المبيعات، وجدولة المواعيد تلقائياً بدون تدخل بشري.</p>
+</div>
+<div class="ai-card fade-in">
+<div class="ai-icon">📊</div>
+<h3 style="font-size:1.1rem;margin-bottom:.75rem">CRM الذكي</h3>
+<p style="font-size:.85rem;color:var(--text-secondary);line-height:1.8">أنظمة إدارة علاقات العملاء المدعومة بالذكاء الاصطناعي لتتبع العملاء، توقع المبيعات، وأتمتة المتابعة بدقة عالية.</p>
+</div>
+<div class="ai-card fade-in">
+<div class="ai-icon">📝</div>
+<h3 style="font-size:1.1rem;margin-bottom:.75rem">إنشاء المحتوى بالـ AI</h3>
+<p style="font-size:.85rem;color:var(--text-secondary);line-height:1.8">توليد محتوى تسويقي احترافي بالذكاء الاصطناعي: مقالات، منشورات، إعلانات، وصفات منتجات بكفاءة 10 أضعاف.</p>
+</div>
+<div class="ai-card fade-in">
+<div class="ai-icon">⚡</div>
+<h3 style="font-size:1.1rem;margin-bottom:.75rem">أتمتة الأعمال</h3>
+<p style="font-size:.85rem;color:var(--text-secondary);line-height:1.8">أتمتة العمليات المتكررة: الفواتير، الرسائل، المتابعات، وتقارير الأداء لتوفير ساعات عمل يومياً.</p>
+</div>
+<div class="ai-card fade-in">
+<div class="ai-icon">📣</div>
+<h3 style="font-size:1.1rem;margin-bottom:.75rem">AI Marketing التسويق الذكي</h3>
+<p style="font-size:.85rem;color:var(--text-secondary);line-height:1.8">استخدام خوارزميات الذكاء الاصطناعي لتحليل البيانات وتحسين الحملات الإعلانية وتخصيص الرسائل لكل عميل.</p>
+</div>
+<div class="ai-card fade-in">
+<div class="ai-icon">🧠</div>
+<h3 style="font-size:1.1rem;margin-bottom:.75rem">المساعد الذكي الشخصي</h3>
+<p style="font-size:.85rem;color:var(--text-secondary);line-height:1.8">مساعد AI مخصص لفريقك يجيب على الأسئلة الداخلية، يدير المهام، ويوفر البيانات اللازمة في ثوانٍ.</p>
+</div>
+</div>
+<div style="margin-top:3rem;background:linear-gradient(135deg,rgba(0,191,165,.08),rgba(0,150,136,.03));border:1px solid rgba(0,191,165,.15);border-radius:20px;padding:3rem;text-align:center" class="fade-in">
+<h3 style="font-size:1.8rem;margin-bottom:.75rem">جاهز لمستقبل <span class="accent">أعمالك الذكية؟</span></h3>
+<p style="color:var(--text-secondary);margin-bottom:1.5rem">احجز جلسة استشارية مجانية مع خبراء الذكاء الاصطناعي لدينا واكتشف كيف يمكن للـ AI أن يحوّل مشروعك</p>
+<button class="btn-primary" onclick="showPage('contact')">احجز استشارة AI مجانية</button>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== TRAINING PAGE ===== -->
+<div id="page-training" class="page">
+<div class="page-hero">
+<div class="page-hero-bg"></div>
+<div class="page-hero-content">
+<div class="container">
+<div class="section-tag">التكوين والاستشارات</div>
+<h1 class="section-title" style="font-size:3rem;margin-top:.5rem">طوّر <span class="accent">مهاراتك الرقمية</span></h1>
+<p class="section-sub" style="margin:0 auto">برامج تدريبية متخصصة واستشارات رقمية لتأهيلك لقيادة التحول الرقمي</p>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="section-header">
+<div class="section-tag">الدورات التدريبية</div>
+<h2 class="section-title">دوراتنا <span class="accent">المتخصصة</span></h2>
+</div>
+<div class="training-grid">
+<div class="training-card fade-in">
+<div class="tc-level beg">مبتدئ</div>
+<h3 style="font-size:1rem;margin-bottom:.5rem">التسويق الرقمي الشامل</h3>
+<p style="font-size:.83rem;color:var(--text-secondary);line-height:1.7">أساسيات التسويق الرقمي، بناء الاستراتيجية، وتطبيق الأدوات الحديثة لتنمية أعمالك.</p>
+<div class="tc-dur">مدة الدورة: 4 أسابيع</div>
+</div>
+<div class="training-card fade-in">
+<div class="tc-level beg">مبتدئ</div>
+<h3 style="font-size:1rem;margin-bottom:.5rem">WordPress من الصفر</h3>
+<p style="font-size:.83rem;color:var(--text-secondary);line-height:1.7">بناء وإدارة مواقع WordPress احترافية بدون معرفة برمجية مسبقة.</p>
+<div class="tc-dur">مدة الدورة: 3 أسابيع</div>
+</div>
+<div class="training-card fade-in">
+<div class="tc-level mid">متوسط</div>
+<h3 style="font-size:1rem;margin-bottom:.5rem">SEO الاحترافي</h3>
+<p style="font-size:.83rem;color:var(--text-secondary);line-height:1.7">تقنيات SEO المتقدمة للوصول إلى صدارة نتائج البحث وتحقيق حركة مرور عضوية مستدامة.</p>
+<div class="tc-dur">مدة الدورة: 5 أسابيع</div>
+</div>
+<div class="training-card fade-in">
+<div class="tc-level beg">مبتدئ</div>
+<h3 style="font-size:1rem;margin-bottom:.5rem">Canva Pro للتصميم</h3>
+<p style="font-size:.83rem;color:var(--text-secondary);line-height:1.7">تصميم منشورات احترافية ومواد تسويقية جذابة باستخدام Canva Pro.</p>
+<div class="tc-dur">مدة الدورة: 2 أسبوع</div>
+</div>
+<div class="training-card fade-in">
+<div class="tc-level adv">متقدم</div>
+<h3 style="font-size:1rem;margin-bottom:.5rem">الذكاء الاصطناعي للأعمال</h3>
+<p style="font-size:.83rem;color:var(--text-secondary);line-height:1.7">تطبيقات الذكاء الاصطناعي في التسويق، الإنتاجية، وأتمتة الأعمال لتضخيم إنجازاتك.</p>
+<div class="tc-dur">مدة الدورة: 6 أسابيع</div>
+</div>
+<div class="training-card fade-in">
+<div class="tc-level mid">متوسط</div>
+<h3 style="font-size:1rem;margin-bottom:.5rem">إدارة الشبكات الاجتماعية</h3>
+<p style="font-size:.83rem;color:var(--text-secondary);line-height:1.7">بناء استراتيجية محتوى، إدارة المنصات، وقياس الأداء للوصول إلى جمهورك المثالي.</p>
+<div class="tc-dur">مدة الدورة: 4 أسابيع</div>
+</div>
+</div>
+<div style="margin-top:4rem">
+<div class="section-header">
+<div class="section-tag">الاستشارات</div>
+<h2 class="section-title">خدمات <span class="accent">الاستشارة</span></h2>
+</div>
+<div class="why-grid">
+<div class="why-card fade-in" style="background:var(--navy-light);border-radius:16px;padding:2rem">
+<div class="why-icon g">🔄</div>
+<div class="why-title" style="font-size:1rem">التحول الرقمي</div>
+<div class="why-desc">دراسة شاملة لمؤسستك وخارطة طريق متكاملة للانتقال إلى العالم الرقمي بسلاسة وكفاءة</div>
+</div>
+<div class="why-card fade-in" style="background:var(--navy-light);border-radius:16px;padding:2rem">
+<div class="why-icon t">📈</div>
+<div class="why-title" style="font-size:1rem">تطوير الأعمال</div>
+<div class="why-desc">استراتيجيات نمو مخصصة لمشروعك مبنية على تحليل السوق والمنافسين وفرص التوسع</div>
+</div>
+<div class="why-card fade-in" style="background:var(--navy-light);border-radius:16px;padding:2rem">
+<div class="why-icon g">🎯</div>
+<div class="why-title" style="font-size:1rem">استشارات التسويق</div>
+<div class="why-desc">تدقيق كامل لحضورك الرقمي وخطة تسويقية مفصلة لتحقيق أهدافك بأفضل كفاءة وأقل تكلفة</div>
+</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:2rem">
+<button class="btn-primary" onclick="showPage('contact')">سجّل في دورة أو احجز استشارة</button>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div id="page-contact" class="page">
+<div class="page-hero">
+<div class="page-hero-bg"></div>
+<div class="page-hero-content">
+<div class="container">
+<div class="section-tag">تواصل معنا</div>
+<h1 class="section-title" style="font-size:3rem;margin-top:.5rem">لنبدأ <span class="accent">معاً</span></h1>
+<p class="section-sub" style="margin:0 auto">تواصل معنا اليوم واحصل على استشارة مجانية مع أحد خبرائنا</p>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="contact-grid">
+<div class="contact-info">
+<h3 style="font-size:1.5rem;margin-bottom:1.5rem">معلومات <span class="accent">التواصل</span></h3>
+<div class="ci-item">
+<div class="ci-icon">📍</div>
+<div><strong>الموقع</strong><div class="ci-text">الجزائر، البويرة</div></div>
+</div>
+<div class="ci-item">
+<div class="ci-icon">📞</div>
+<div><strong>الهاتف / واتساب</strong><div class="ci-text">+213658732591</div></div>
+</div>
+<div class="ci-item">
+<div class="ci-icon">📧</div>
+<div><strong>البريد الإلكتروني</strong><div class="ci-text">nadji74rabah@gmail.com</div></div>
+</div>
+</div>
+<button class="btn-primary" style="margin-top:1rem" onclick="openWhatsApp()">💬 تواصل عبر واتساب</button>
+</div>
+<div class="contact-form fade-in">
+<h3 style="font-size:1.3rem;margin-bottom:1.5rem">أرسل <span class="accent">رسالتك</span></h3>
+<div class="form-row">
+<div class="form-group">
+<label>الاسم الكامل *</label>
+<input type="text" placeholder="اسمك الكامل">
+</div>
+<div class="form-group">
+<label>البريد الإلكتروني *</label>
+<input type="email" placeholder="email@example.com" dir="ltr">
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label>رقم الهاتف</label>
+<input type="tel" placeholder="+213 XXX XXX XXX" dir="ltr">
+</div>
+<div class="form-group">
+<label>نوع الخدمة</label>
+<select>
+<option value="">اختر الخدمة</option>
+<option>تصميم موقع إلكتروني</option>
+<option>متجر إلكتروني</option>
+<option>إدارة الشبكات الاجتماعية</option>
+<option>إعلانات رقمية</option>
+<option>SEO</option>
+<option>الذكاء الاصطناعي والأتمتة</option>
+<option>هوية بصرية</option>
+<option>تكوين واستشارات</option>
+<option>أخرى</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label>ميزانيتك التقريبية</label>
+<select>
+<option value="">حدد الميزانية</option>
+<option>أقل من 50,000 دج</option>
+<option>50,000 - 150,000 دج</option>
+<option>150,000 - 500,000 دج</option>
+<option>أكثر من 500,000 دج</option>
+</select>
+</div>
+<div class="form-group">
+<label>رسالتك *</label>
+<textarea placeholder="أخبرنا عن مشروعك واحتياجاتك..."></textarea>
+</div>
+<button class="btn-primary" style="width:100%;justify-content:center;padding:1rem" onclick="submitForm()">إرسال الرسالة ✈️</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo" style="margin-bottom:1rem">
+<div class="logo-mark">FBI</div>
+<div class="logo-text">
+<span>Future Building Institute</span>
+<span>وكالة رقمية متكاملة</span>
+</div>
+</div>
+<p>نحن وكالة رقمية متكاملة نؤمن بأن كل مشروع يستحق حضوراً رقمياً استثنائياً. نجمع بين الإبداع والتقنية لنحوّل أحلامك إلى نتائج ملموسة.</p>
+</div>
+<div class="footer-col">
+<h4>الخدمات</h4>
+<ul class="footer-links">
+<li><a href="#" onclick="showPage('services')">تصميم المواقع</a></li>
+<li><a href="#" onclick="showPage('services')">المتاجر الإلكترونية</a></li>
+<li><a href="#" onclick="showPage('services')">الإعلانات الرقمية</a></li>
+<li><a href="#" onclick="showPage('services')">SEO</a></li>
+<li><a href="#" onclick="showPage('ai')">الذكاء الاصطناعي</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>الوكالة</h4>
+<ul class="footer-links">
+<li><a href="#" onclick="showPage('home')">من نحن</a></li>
+<li><a href="#" onclick="showPage('training')">التكوين</a></li>
+<li><a href="#" onclick="showPage('contact')">اتصل بنا</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>تواصل</h4>
+<ul class="footer-links">
+<li><a href="#">📍 الجزائر، البويرة</a></li>
+<li><a href="#">📧 nadji74rabah@gmail.com</a></li>
+<li><a href="#">📞 +213658732591</a></li>
+</ul>
+<button class="btn-primary" style="margin-top:1rem;font-size:.82rem;padding:.6rem 1.2rem" onclick="openWhatsApp()">💬 واتساب</button>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2025 Future Building Institute — FBI Digital Agency. جميع الحقوق محفوظة.</span>
+<span style="color:var(--gold)">Powered by Intelligence & Creativity ✨</span>
+</div>
+</div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="whatsapp-btn" onclick="openWhatsApp()" title="تواصل عبر واتساب">💬</div>
+
+<script>
+function showPage(page){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+const el=document.getElementById('page-'+page);
+if(el){el.classList.add('active')}
+window.scrollTo({top:0,behavior:'smooth'});
+initFadeIns();
+}
+
+function toggleMenu(){
+const m=document.getElementById('mobileMenu');
+m.style.display=m.style.display==='none'?'flex':'none';
+if(m.style.display==='flex'){m.style.flexDirection='column';m.style.alignItems='center';m.style.justifyContent='center'}
+}
+
+window.addEventListener('scroll',()=>{
+const nav=document.getElementById('navbar');
+if(window.scrollY>60){nav.classList.add('scrolled')}else{nav.classList.remove('scrolled')}
+checkFadeIns();
+});
+
+function checkFadeIns(){
+const els=document.querySelectorAll('#page-'+getCurrentPage()+' .fade-in');
+els.forEach(el=>{
+const rect=el.getBoundingClientRect();
+if(rect.top<window.innerHeight-80){el.classList.add('visible')}
+});
+}
+
+function getCurrentPage(){
+const active=document.querySelector('.page.active');
+return active?active.id.replace('page-',''):'home';
+}
+
+function initFadeIns(){
+setTimeout(checkFadeIns,100);
+}
+
+const WA_NUMBER = '213658732591';
+
+function openWhatsApp(){
+  const msg = encodeURIComponent('مرحباً، أود الاستفسار عن خدمات FBI Digital Agency 🚀');
+  window.open('https://wa.me/'+WA_NUMBER+'?text='+msg,'_blank');
+}
+
+function submitForm(){
+  const form = document.querySelector('.contact-form');
+  const name    = form.querySelector('input[type="text"]').value.trim();
+  const email   = form.querySelector('input[type="email"]').value.trim();
+  const phone   = form.querySelector('input[type="tel"]').value.trim();
+  const selects = form.querySelectorAll('select');
+  const service = selects[0].value;
+  const budget  = selects[1].value;
+  const message = form.querySelector('textarea').value.trim();
+
+  if(!name){alert('⚠️ الرجاء إدخال الاسم الكامل');return;}
+  if(!email){alert('⚠️ الرجاء إدخال البريد الإلكتروني');return;}
+  if(!message){alert('⚠️ الرجاء كتابة رسالتك');return;}
+
+  const text =
+`🔔 *طلب جديد من موقع FBI Digital Agency*
+━━━━━━━━━━━━━━━━━━
+👤 *الاسم:* ${name}
+📧 *البريد:* ${email}
+📞 *الهاتف:* ${phone || 'لم يُذكر'}
+🛠️ *الخدمة:* ${service || 'لم تُحدَّد'}
+💰 *الميزانية:* ${budget || 'لم تُحدَّد'}
+━━━━━━━━━━━━━━━━━━
+💬 *الرسالة:*
+${message}
+━━━━━━━━━━━━━━━━━━
+📅 ${new Date().toLocaleString('ar-DZ')}`;
+
+  window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text),'_blank');
+
+  const btn = form.querySelector('.btn-primary');
+  btn.textContent = '✅ تم! سيتم فتح واتساب...';
+  btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+  form.querySelectorAll('input,textarea,select').forEach(el=>el.value='');
+  setTimeout(()=>{btn.textContent='إرسال الرسالة ✈️';btn.style.background=''},4000);
+}
+
+initFadeIns();
+</script>
+</body>
+</html>
